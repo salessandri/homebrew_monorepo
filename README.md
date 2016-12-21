@@ -19,4 +19,4 @@ brew install https://raw.githubusercontent.com/athrunsun/homebrew-osxbinary/mast
 ```
 
 ## Documentation
-`brew help`, `man brew` or check [Linuxbrew's documentation](https://github.com/Homebrew/brew/tree/master/share/doc/homebrew#readme).
+`brew help`, `man brew` or check [Homebrew's documentation](https://github.com/Homebrew/brew/tree/master/docs#readme).
