@@ -11,8 +11,6 @@ class FfmpegBinary < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.install_symlink("#{libexec}/ffmpeg")
-        bin.install_symlink("#{libexec}/ffprobe")
-        bin.install_symlink("#{libexec}/ffserver")
+        bin.install_symlink("#{libexec}/*")
     end
 end
