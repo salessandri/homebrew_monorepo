@@ -5,7 +5,7 @@ These formulae provide binary installs for software that,
 
 ## NOTE
 * Don't mess this up with homebrew's official [homebrew-binary](https://github.com/Homebrew/homebrew-binary).
-* This tap is ONLY for **non-compiling fans** like me. I really hate to install python3 required to compile mpv. Binaries are way **cleaner** for me.
+* This tap is for **no-compiling fans** like me. I really hate to install a bunch of dependencies just to compile one formula. Binaries are way **cleaner** for me.
 
 ## How do I install these formulae?
 `brew install athrunsun/osxbinary/<formula>`
