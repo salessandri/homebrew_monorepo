@@ -6,8 +6,8 @@ cask 'git' do
     url "https://downloads.sourceforge.net/git-osx-installer/git-#{version}-intel-universal-snow-leopard.dmg"
     pkg "git-#{version}-intel-universal-snow-leopard.pkg"
   else
-    version '2.10.1'
-    sha256 '6bad786bae098eaae0aa824e714d5a0b0fb3eb5d1412ed27c89743ddc1d3d209'
+    version '2.13.0'
+    sha256 'ce114b11da114901db0f737a1c5670ecbe0fdbb9f50df5752a2e2d9adb90ec7d'
 
     url "https://downloads.sourceforge.net/git-osx-installer/git-#{version}-intel-universal-mavericks.dmg"
     appcast 'https://sourceforge.net/projects/git-osx-installer/rss',
