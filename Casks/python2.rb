@@ -6,4 +6,16 @@ cask 'python2' do
 
     url "https://www.python.org/ftp/python/#{version}/python-#{version}-macosx10.6.pkg"
     pkg "python-#{version}-macosx10.6.pkg"
+
+    # http://www.onurguzel.com/uninstall-python-package-from-os-x/
+    uninstall script: "sudo rm -rf /Library/Frameworks/Python.framework; cd /usr/local/bin; ls -l . | grep '../Library/Frameworks/Python.framework' | awk '{print $9}' | xargs sudo rm; sudo rm -rf /Applications/Python\ 2.7",
+              pkgutil: "org.python.Python.PythonApplications-2.7",
+              pkgutil: "org.python.Python.PythonDocumentation-2.7",
+              pkgutil: "org.python.Python.PythonDocumentation-2.7",
+              pkgutil: "org.python.Python.PythonFramework-2.7",
+              pkgutil: "org.python.Python.PythonUnixTools-2.7"
+    
+    caveats do
+        puts "NOTE the uninstalling will remove all python versions installed by official python pkg! Recommend install python via homebrew instead."
+    end
 end
