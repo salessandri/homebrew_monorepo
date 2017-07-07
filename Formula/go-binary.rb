@@ -1,10 +1,17 @@
 class GoBinary < Formula
     desc "Go programming environment, binary installation."
     homepage "https://golang.org"
-    version "1.7.4"
+    version "1.8.3"
 
-    url "https://storage.googleapis.com/golang/go#{version}.darwin-amd64.tar.gz"
-    sha256 "f86c727012e33f3f482b049281aaee24211fe29dfafd121d93f32799a6b6ba2d"
+    option "with-mirror", "Download from https://mirrors.ustc.edu.cn/golang/, use this option if you're in mainland China for a faster downloading speed."
+
+    if build.with? "mirror"
+        url "https://mirrors.ustc.edu.cn/golang/go#{version}.darwin-amd64.tar.gz"
+    else
+        url "https://storage.googleapis.com/golang/go#{version}.darwin-amd64.tar.gz"
+    end
+
+    sha256 "f20b92bc7d4ab22aa18270087c478a74463bd64a893a94264434a38a4b167c05"
 
     bottle :unneeded
     conflicts_with "go"
