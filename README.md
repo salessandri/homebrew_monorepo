@@ -1,1 +1,1 @@
-# Homebrew general binary formulaes for both MacOS and Linux distros
+# Homebrew generic binary formulaes for both MacOS and Linux distros
