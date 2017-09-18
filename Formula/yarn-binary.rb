@@ -1,8 +1,8 @@
 class YarnBinary < Formula
-    desc "JavaScript package manager, binary install."
-    homepage "https://yarnpkg.com/"
-    url "https://yarnpkg.com/downloads/0.27.5/yarn-v0.27.5.tar.gz"
-    sha256 "f0f3510246ee74eb660ea06930dcded7b684eac2593aa979a7add84b72517968"
+    desc "JavaScript package manager, binary install (without any dependencies)."
+    homepage "https://github.com/yarnpkg/yarn"
+    url "https://github.com/yarnpkg/yarn/releases/download/v1.0.2/yarn-v1.0.2.tar.gz"
+    sha256 "8a31f8fa50ab6d5f8852025fb0ea4a50f2f8b82792f060fa99de0acc370b0698"
 
     bottle :unneeded
 
