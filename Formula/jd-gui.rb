@@ -11,9 +11,9 @@ class JdGui < Formula
     def install
         prefix.install Dir["*"]
         
-        ("#{prefix}/jdgui").write <<-EOS.undent
+        (prefix/"jdgui").write <<-EOS.undent
             #!/usr/bin/env bash
-            java -jar "$(brew --prefix jd-gui)/jd-gui-1.4.0.jar"
+            java -jar "$(brew --prefix jd-gui)/jd-gui-#{version}.jar"
         EOS
 
         chmod(0755, "#{prefix}/jdgui")
