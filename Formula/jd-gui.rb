@@ -19,4 +19,11 @@ class JdGui < Formula
         chmod(0755, "#{prefix}/jdgui")
         bin.install_symlink("#{prefix}/jdgui")
     end
+
+    def caveats; <<-EOS.undent
+        Executable is linked as "jdgui".
+        You need to call "nohup bash -c jdgui >/dev/null 2>&1 &" to run it in the background.
+        Please NOTE that jd-gui will create a "jd-gui.cfg" file in the folder where you call that command.
+        EOS
+    end
 end
