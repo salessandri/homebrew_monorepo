@@ -1,7 +1,7 @@
-class NodeBinaryLts < Formula
+class NodeLtsBinary < Formula
     desc "Platform built on the V8 JavaScript runtime to build network applications, binaries installation. This is the LTS version and is recommended for most users."
     homepage "https://nodejs.org/"
-    version "6.9.2"
+    version "8.9.0"
 
     option "with-taobao-mirror", "Download tarball from https://npm.taobao.org/mirrors/node/, use this option if you're in mainland China for a faster downloading speed."
 
@@ -11,7 +11,7 @@ class NodeBinaryLts < Formula
         url "https://nodejs.org/dist/v#{version}/node-v#{version}-darwin-x64.tar.xz"
     end
 
-    sha256 "e14b5d06ad16c10fb2ff2e0e6bc894d511d70ad3121c1815a241b10295518747"
+    sha256 "9c38c3778f60532cec93a49330a945fcf10b252ffbf1b842b4a9b1d64a99d3cd"
 
     bottle :unneeded
     conflicts_with "node", "node-binary"
