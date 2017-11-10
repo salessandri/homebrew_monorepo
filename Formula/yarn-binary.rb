@@ -1,7 +1,7 @@
 class YarnBinary < Formula
     desc "JavaScript package manager, binary install (without any dependencies)."
     homepage "https://github.com/yarnpkg/yarn"
-    version "1.2.1"
+    version "1.3.2"
 
     option "with-taobao-mirror", "Download tarball from https://npm.taobao.org/mirrors/yarn/, use this option if you're in mainland China for a faster downloading speed."
 
@@ -11,7 +11,7 @@ class YarnBinary < Formula
         url "https://github.com/yarnpkg/yarn/releases/download/v#{version}/yarn-v#{version}.tar.gz"
     end
 
-    sha256 "f8ed07675c3a0b866e11a02af5c15d2f34c3aa261ab1501943ecee328786c959"
+    sha256 "6cfe82e530ef0837212f13e45c1565ba53f5199eec2527b85ecbcd88bf26821d"
 
     bottle :unneeded
 
