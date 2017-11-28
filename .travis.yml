@@ -12,5 +12,4 @@ env:
   - REPO_PREFIX=homebrew-osxbinary
 
 script:
-  - cd $REPO_PREFIX
   - git -c user.name='travis' -c user.email='travis' push "https://athrunsun:${GITHUB_API_TOKEN}@github.com/athrunsun/$REPO_PREFIX.git" `git subtree split --prefix $REPO_PREFIX master`:master -f
