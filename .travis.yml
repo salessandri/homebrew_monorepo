@@ -13,4 +13,4 @@ env:
 
 script:
   - cd $REPO_PREFIX
-  - git -c user.name='travis' -c user.email='travis' subtree push --prefix $REPO_PREFIX -f -q "https://athrunsun:${GITHUB_API_TOKEN}@github.com/athrunsun/$REPO_PREFIX.git" master &> /dev/null
+  - git -c user.name='travis' -c user.email='travis' push "https://athrunsun:${GITHUB_API_TOKEN}@github.com/athrunsun/$REPO_PREFIX.git" `git subtree split --prefix $REPO_PREFIX master`:master -f
